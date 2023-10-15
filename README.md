@@ -10,7 +10,7 @@ Este é um projeto desenvolvido em React com TypeScript que exibe os meus projet
 
 ## ✔️ Confira o projeto completo em:
 
-<a href="https://gdegato.vercel.app/">DSCommerce</a>
+<a href="https://gdegato.vercel.app/">GdeGato</a>
 
 ## 💻 Tecnologias e Bibliotecas
 
