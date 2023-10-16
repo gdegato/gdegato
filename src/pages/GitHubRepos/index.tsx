@@ -28,8 +28,7 @@ function GitHubRepos() {
         axios.get('https://api.github.com/users/gdegato/repos', {})
             .then(response => {
                 const projects = response.data;
-                setProjectData(projects);
-                console.log('projects', response.data)
+                setProjectData(projects);                
             })
             .catch(error => {
                 console.error('Erro ao buscar projetos:', error);

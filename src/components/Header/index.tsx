@@ -25,8 +25,7 @@ export function Header() {
         })
             .then(response => {
                 const userProfile = response.data;
-                setProfile(userProfile);
-                console.log('profile', response.data)
+                setProfile(userProfile);               
             })
             .catch(error => {
                 console.error('Erro ao buscar projetos:', error);
