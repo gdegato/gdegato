@@ -54,8 +54,9 @@ export function Profile() {
                                     weight="fill" />
                                 {profile.company}</p>
                         </div>
+
                         <div>
-                            <p>
+                            <p className='location-profile'>
                                 <MapPin size={20} color="#c98cf1" weight="fill" />
                                 {profile.location}</p>
                         </div>
@@ -65,6 +66,7 @@ export function Profile() {
                                     <LinkedinLogo size={20} color="#3294F8" weight="fill" />
                                     LinkedIn</p></a>
                         </div>
+
                     </ProfileIdentityCompany>
                 </div>
                 <div className='profile-description'>

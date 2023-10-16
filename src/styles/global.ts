@@ -19,20 +19,19 @@ export const GlobalStyle = createGlobalStyle`
         ${(props) => props.theme['base-background']},
         ${(props) => props.theme['base-border']}
       
-       );
-     
+       );     
       
         color:${(props) => props.theme['base-text']};
         -webkit-font-smoothing: antialiased;
          margin: 0 auto;
   
-        @media (max-width: 900px) {
+     /*    @media (min-width: 900px) {
             max-width: 900px;           
         }   
             
         @media (max-width: 1380px) {
             max-width: 1380px;           
-        }
+        } */
         
     }
 

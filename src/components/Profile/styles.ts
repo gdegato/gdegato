@@ -2,23 +2,15 @@ import styled from 'styled-components'
 
 export const GdeGatoProfile = styled.div`
   display: flex;
-  align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
-
-  height: 212px;
-  width: auto;
-  max-width: 1850px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: calc(0px - 1.5rem - 40px);
-  
-  border-radius: 10px;
+  padding: 20px;
+  height: auto;
+  width: 100%;
   background: ${(props) => props.theme['base-profile']};
+  margin-top: calc(0px - 1.5rem - 40px);
 
-  .profile-identity {
-    display: flex;
-    justify-content: space-between;
+  img {
+    height: 88px;
+    border-radius: 50%;
   }
 
   .profile-identity-name-bio {
@@ -26,19 +18,61 @@ export const GdeGatoProfile = styled.div`
     flex-direction: column;
     h2 {
       margin-bottom: -20px;
+      margin-top: 0;
     }
   }
 
-  img {
-    height: 148px;
-    border-radius: 8px;
-  } 
+  .location-profile {
+    display: none;
+  }
+
+  .profile-description {
+    margin-left: -100px;
+  }
+
+  @media (min-width: 576px) {
+    .location-profile {
+      display: unset;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    padding: 40px;
+    align-items: center;
+    height: auto;
+    width: auto;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 10px;
+
+    img {
+      height: 148px;
+      border-radius: 8px;
+    }
+
+    .profile-description {
+      margin-left: 0;
+    }
+
+    .profile-identity {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .profile-identity-name-bio {
+      display: flex;
+      flex-direction: column;
+      h2 {
+        margin-bottom: -20px;
+      }
+    }
+  }
 `
 
 export const ProfileContent = styled.div`
   padding-left: 20px;
 
-  .profile-description{
+  .profile-description {
     margin-bottom: 20px;
   }
 `
@@ -59,12 +93,11 @@ export const ProfileIdentityCompany = styled.div`
   }
 
   .link-linkedin {
-    color:${(props) => props.theme['base-text']};
+    color: ${(props) => props.theme['base-text']};
   }
 
-  .link-linkedin:hover{
-        color:${(props) => props.theme['purple']};     
-        cursor: pointer;
-    }
-  
+  .link-linkedin:hover {
+    color: ${(props) => props.theme['purple']};
+    cursor: pointer;
+  }
 `

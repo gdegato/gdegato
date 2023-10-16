@@ -1,6 +1,6 @@
 # 😺 Meu Projeto G de Gato em React.js com TypeScript
 
-Este é um projeto desenvolvido em React com TypeScript que exibe os meus projetos públicos `gdegato` no GitHub. Ele também inclui recursos de pesquisa para facilitar a localização de projetos específicos.
+Este é um projeto desenvolvido em React com TypeScript que exibe os meus projetos públicos `gdegato` no GitHub. Ele também inclui recursos de pesquisa para facilitar a localização de projetos específicos. Desenvolvido com responsividade para diferentes telas
 
 
 ## Demonstração
@@ -23,16 +23,19 @@ Este projeto utiliza as seguintes tecnologias e bibliotecas:
 - 🌟 **Phosphor Icons**: Uma biblioteca de ícones open-source.
 - 🚀 **Vite**: Um bundler e servidor de desenvolvimento rápido para projetos web modernos.
 - 😺 **Yarn**: Um gerenciador de pacotes para o Node.js.
+  
 
 ## 🛠️ Funcionalidades
 
 - Visualização de projetos públicos no GitHub.
 - Pesquisa por projetos específicos.
 - Exibição de informações detalhadas de projetos, incluindo nome, descrição e links relacionados.
+  
 
 ## 🐙 Consulta à API do GitHub 
 
 Este projeto utiliza a API do GitHub para obter os projetos públicos do usuário `gdegato`. A consulta é realizada utilizando a biblioteca Axios.
+
 
 ## 🛠️ Executando o Projeto
 
@@ -47,6 +50,7 @@ Siga as etapas abaixo para executar o projeto localmente:
 4. Inicie o servidor de desenvolvimento com Vite
 
 5. O projeto estará disponível em [http://localhost:5173](http://localhost:5173) no seu navegador.
+
 
 ## Contribuição
 

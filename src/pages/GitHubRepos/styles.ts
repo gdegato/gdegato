@@ -4,22 +4,29 @@ export const GitHubProjectsNumber = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1850px;
-  margin-right: 40px;
+  margin: 0 20px;
 
-  p{
+  p {
     color: ${(props) => props.theme['base-span']};
   }
+
+  @media (min-width: 576px) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: 768px) {
+    margin: 0 60px;
+  }
 `
+
 export const TitleGitHubProjects = styled.h2`
-  margin-left: 40px;
   padding-top: 10px;
 `
+
 export const SearchFormContainer = styled.form`
-  margin-left: 40px;
-  margin-right: 40px;
   display: flex;
   gap: 1rem;
+  margin-bottom: 20px;
 
   input {
     flex: 1;
@@ -29,18 +36,26 @@ export const SearchFormContainer = styled.form`
     color: ${(props) => props.theme['base-span']};
     padding: 1rem;
     margin-bottom: 1rem;
-    max-width: 1850px;
 
     &::placeholder {
       color: ${(props) => props.theme['base-label']};
     }
-  }  
+
+    @media (min-width: 576px) {
+      margin: 0 30px;
+    }
+
+    @media (min-width: 768px) {
+      margin: 0 60px;
+    }
+  }
 `
 export const CardsContainer = styled.ul`
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, 416px);
   grid-gap: 2rem;
+  margin: 0 auto;
 `
 export const Card = styled.div`
   background: ${(props) => props.theme['base-post']};
@@ -48,9 +63,8 @@ export const Card = styled.div`
   padding: 20px;
   border-radius: 20px;
   min-height: 260px;
-  width: 416px;
-  margin-right: 1rem;
-  margin-bottom: 1.35rem;
+  margin: 0 auto;
+  width: 316px;
   cursor: pointer;
 
   &:hover {
@@ -59,6 +73,10 @@ export const Card = styled.div`
     -webkit-transform: scale(1.1);
     transform: scale(1.025);
     transition: 0.18s;
+  }
+
+  @media (min-width: 576px) {
+    width: 416px;
   }
 `
 export const GitHubTitle = styled.h3`
@@ -72,5 +90,3 @@ export const GitHubLink = styled.p`
   font-family: 8px;
   padding-bottom: 8px;
 `
-
-

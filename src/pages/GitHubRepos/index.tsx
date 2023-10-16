@@ -61,7 +61,7 @@ function GitHubRepos() {
     }
 
     return (
-        <div>
+        <div >
             <GitHubProjectsNumber>
                 <TitleGitHubProjects>Meus projetos no GitHub</TitleGitHubProjects>
                 <p>{filteredProjects.length} projetos</p>
