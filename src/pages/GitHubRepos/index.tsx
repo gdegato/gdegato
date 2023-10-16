@@ -15,6 +15,7 @@ type Repos = {
     owner: {
         avatar_url: string
     }
+    pushed_at: string;
 }
 
 export type FilterData = {
@@ -28,7 +29,9 @@ function GitHubRepos() {
         axios.get('https://api.github.com/users/gdegato/repos', {})
             .then(response => {
                 const projects = response.data;
-                setProjectData(projects);                
+                const sortedProjects = projects.sort((a : any, b : any) => 
+                new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime())
+                setProjectData(sortedProjects); 
             })
             .catch(error => {
                 console.error('Erro ao buscar projetos:', error);
