@@ -55,8 +55,8 @@ export function Profile() {
                                 {profile.company}</p>
                         </div>
 
-                        <div>
-                            <p className='location-profile'>
+                        <div className='location-profile'>
+                            <p >
                                 <MapPin size={20} color="#c98cf1" weight="fill" />
                                 {profile.location}</p>
                         </div>

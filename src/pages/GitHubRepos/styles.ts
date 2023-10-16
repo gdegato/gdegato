@@ -36,12 +36,9 @@ export const SearchFormContainer = styled.form`
     color: ${(props) => props.theme['base-span']};
     padding: 1rem;
     
-
     &::placeholder {
       color: ${(props) => props.theme['base-label']};
-    }
-
- 
+    } 
 
     @media (min-width: 768px) {
       margin: 0 40px 30px 40px;
