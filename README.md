@@ -1,6 +1,6 @@
 # 😺 Meu Projeto G de Gato em React.js com TypeScript
 
-Este é um projeto desenvolvido em React com TypeScript que exibe os meus projetos públicos `gdegato` no GitHub. Ele também inclui recursos de pesquisa para facilitar a localização de projetos específicos. Desenvolvido com responsividade para diferentes telas
+Este é um projeto desenvolvido em React com TypeScript que exibe os meus projetos públicos `gdegato` no GitHub. Ele também inclui recursos de pesquisa para facilitar a localização de projetos específicos. Desenvolvido com responsividade para melhor visualização em diferentes telas.
 
 
 ## Demonstração
