@@ -26,7 +26,7 @@ export const TitleGitHubProjects = styled.h2`
 export const SearchFormContainer = styled.form`
   display: flex;
   gap: 1rem;
-  margin-bottom: 20px;
+  margin: 0 20px 20px 20px;
 
   input {
     flex: 1;
@@ -35,18 +35,17 @@ export const SearchFormContainer = styled.form`
     background: ${(props) => props.theme['base-input']};
     color: ${(props) => props.theme['base-span']};
     padding: 1rem;
-    margin-bottom: 1rem;
+    
 
     &::placeholder {
       color: ${(props) => props.theme['base-label']};
     }
 
-    @media (min-width: 576px) {
-      margin: 0 30px;
-    }
+ 
 
     @media (min-width: 768px) {
-      margin: 0 60px;
+      margin: 0 40px 30px 40px;
+      
     }
   }
 `
@@ -55,7 +54,11 @@ export const CardsContainer = styled.ul`
   justify-content: center;
   grid-template-columns: repeat(auto-fill, 416px);
   grid-gap: 2rem;
-  margin: 0 auto;
+ margin: 0 20px;
+
+ @media (min-width: 576px) {
+  margin: 0 40px;
+  }
 `
 export const Card = styled.div`
   background: ${(props) => props.theme['base-post']};
