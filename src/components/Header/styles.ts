@@ -10,6 +10,7 @@ export const HeaderContainer = styled.header`
   h2 {
     text-align: center;
     margin-top: 10px;
+    color: ${(props) => props.theme['white']};
   }
 `
 
