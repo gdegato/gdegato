@@ -6,8 +6,9 @@ export const GdeGatoProfile = styled.div`
   height: auto;
   width: 100%;
   background: ${(props) => props.theme['base-profile']};
-  margin-top: calc(0px - 1.5rem - 40px);
-
+  margin-top: calc(0px - 1.5rem - 40px); 
+  box-shadow: rgba(58, 83, 107, 1) -20px 25px 50px -50px;
+  
   img {
     height: 88px;
     border-radius: 50%;
