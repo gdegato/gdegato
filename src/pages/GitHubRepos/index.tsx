@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { CardsContainer, Card, GitHubLink, GitHubTitle, TitleGitHubProjects, SearchFormContainer, GitHubProjectsNumber } from './styles';
 import { GithubLogo, Globe } from 'phosphor-react';
+import { Profile } from '../../components/Profile';
 
 type Repos = {
     description: string;
@@ -29,9 +30,9 @@ function GitHubRepos() {
         axios.get('https://api.github.com/users/gdegato/repos', {})
             .then(response => {
                 const projects = response.data;
-                const sortedProjects = projects.sort((a : any, b : any) => 
-                new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime())
-                setProjectData(sortedProjects); 
+                const sortedProjects = projects.sort((a: any, b: any) =>
+                    new Date(b.pushed_at).getTime() - new Date(a.pushed_at).getTime())
+                setProjectData(sortedProjects);
             })
             .catch(error => {
                 console.error('Erro ao buscar projetos:', error);
@@ -63,47 +64,50 @@ function GitHubRepos() {
     }
 
     return (
-        <div >
-            <GitHubProjectsNumber>
-                <TitleGitHubProjects>Meus projetos no GitHub</TitleGitHubProjects>
-                <p>{filteredProjects.length} projetos</p>
-            </GitHubProjectsNumber>
-            <SearchFormContainer>
-                <input
-                    name='textProject'
-                    value={formData.textProject || ''}
-                    type="text"
-                    placeholder='Buscar projetos'
-                    className="search-input"
-                    onChange={handleChange}
-                />
-            </SearchFormContainer>
-            <CardsContainer>
-                {filteredProjects.map((project) => (
-                    <Card>
-                        <li key={project.id}>
-                            {project.visibility === 'public' && (
-                                <>
-                                    <GitHubTitle>
-                                        {project.name}
-                                    </GitHubTitle>
-                                    <GitHubLink>
-                                        <Globe size={20}
-                                            color="#7b78e5" /> <a href={project.homepage} target='_blank'>{project.full_name}</a>
-                                    </GitHubLink>
-                                    <GitHubLink>
-                                        <GithubLogo size={20} weight="fill" color="#c98cf1" />
-                                        <a href={project.svn_url} target='_blank'>
-                                            {project.svn_url}</a>
-                                    </GitHubLink>
-                                    <p>{project.description}</p>
-                                </>
-                            )}
-                        </li>
-                    </Card>
-                ))}
-            </CardsContainer>
-        </div >
+        <>
+            <Profile />
+            <div >
+                <GitHubProjectsNumber>
+                    <TitleGitHubProjects>Meus projetos no GitHub</TitleGitHubProjects>
+                    <p>{filteredProjects.length} projetos</p>
+                </GitHubProjectsNumber>
+                <SearchFormContainer>
+                    <input
+                        name='textProject'
+                        value={formData.textProject || ''}
+                        type="text"
+                        placeholder='Buscar projetos'
+                        className="search-input"
+                        onChange={handleChange}
+                    />
+                </SearchFormContainer>
+                <CardsContainer>
+                    {filteredProjects.map((project) => (
+                        <Card>
+                            <li key={project.id}>
+                                {project.visibility === 'public' && (
+                                    <>
+                                        <GitHubTitle>
+                                            {project.name}
+                                        </GitHubTitle>
+                                        <GitHubLink>
+                                            <Globe size={20}
+                                                color="#7b78e5" /> <a href={project.homepage} target='_blank'>{project.full_name}</a>
+                                        </GitHubLink>
+                                        <GitHubLink>
+                                            <GithubLogo size={20} weight="fill" color="#c98cf1" />
+                                            <a href={project.svn_url} target='_blank'>
+                                                {project.svn_url}</a>
+                                        </GitHubLink>
+                                        <p>{project.description}</p>
+                                    </>
+                                )}
+                            </li>
+                        </Card>
+                    ))}
+                </CardsContainer>
+            </div >
+        </>
     );
 }
 export default GitHubRepos;
