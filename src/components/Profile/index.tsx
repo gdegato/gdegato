@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { GdeGatoProfile, ProfileContent, ProfileIdentityCompany } from './styles';
 import { Buildings, MapPin, LinkedinLogo } from 'phosphor-react';
+import rose from '../../assets/rose-3.jpg';
 
 type Profile = {
     avatar_url: string;
@@ -36,7 +37,7 @@ export function Profile() {
     return (
         <GdeGatoProfile>
             <div>
-                <img src='https://media.licdn.com/dms/image/D4D03AQGWeVq4ctXqcQ/profile-displayphoto-shrink_800_800/0/1677353338307?e=1703116800&v=beta&t=r4ScVkYTrZNGDYzBrw1KyKk57sLDw88P4j_fA0qgoRI' />
+                <img src={rose} />
             </div>
             <ProfileContent>
                 <div className='profile-identity'>
