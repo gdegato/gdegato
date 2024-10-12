@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { GdeGatoProfile, ProfileContent, ProfileIdentityCompany } from './styles';
-import { Buildings, MapPin, LinkedinLogo, SpotifyLogo, YoutubeLogo } from 'phosphor-react';
+import { Buildings, MapPin, LinkedinLogo, SpotifyLogo, YoutubeLogo, Student } from 'phosphor-react';
 import rose from '../../assets/rose-3.jpg';
 
 type Profile = {
@@ -60,24 +60,32 @@ export function Profile() {
                                 {profile.location}
                             </p>
                         </div>
-                        <div>
+                        <div className='location-profile'>
                             <a className='link-linkedin' href='https://www.linkedin.com/in/roselefernandes/' target='_blank'>
                                 <p>
                                     <LinkedinLogo size={20} color="#3294F8" weight="fill" />
                                     LinkedIn</p></a>
                         </div>
-                        <div>
-                            <a className='link-spotify' href='https://open.spotify.com/intl-pt/artist/1Uzxo4SNzx8XPiXH8dy3Nm?si=VJVF4xwtSSGLDzPoWJqSgw' target='_blank'>
+                        <div className='location-profile'>
+                            <a className='link-linkedin' href='https://www.credly.com/users/rosele-fernandes' target='_blank'>
+                                <p>
+                                    <Student size={20} color="#FA8072" weight="fill" />
+                                    Certificados</p>
+                            </a>
+                        </div>
+                        <div className='location-profile'>
+                            <a className='link-linkedin' href='https://open.spotify.com/intl-pt/artist/1Uzxo4SNzx8XPiXH8dy3Nm?si=VJVF4xwtSSGLDzPoWJqSgw' target='_blank'>
                                 <p>
                                     <SpotifyLogo size={20} color="#1db954" weight="fill" />
                                     Spotify</p></a>
                         </div>
-                        <div>
-                            <a className='link-yt' href='https://www.youtube.com/@rosefernandes' target='_blank'>
+                        <div className='location-profile'>
+                            <a className='link-linkedin' href='https://www.youtube.com/@rosefernandes' target='_blank'>
                                 <p>
                                     <YoutubeLogo size={20} color="#c4302b" weight="fill" />
                                     YouTube</p></a>
                         </div>
+
                     </ProfileIdentityCompany>
                 </div>
                 <div className='profile-description'>
