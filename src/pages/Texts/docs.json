@@ -1,0 +1,76 @@
+{
+  "pdfFiles": [
+    {
+      "id": 1,
+      "name": "Programa de Gerenciamento de Riscos Ocupacionais PGR – NR1",
+      "author": "Rosele Fernandes",
+      "link": "https://drive.google.com/file/d/1lzxL5CurJlvQUwRZqgcA1AiGzPTVqzNL/view?usp=drive_link",
+      "resume": "O PGR identifica os perigos oriundos dos processos de trabalho, definindo critérios para classificação de riscos. O programa contempla define critérios para eliminação, redução, minimização e mitigação dos riscos ocupacionais, a partir de um plano de ação contendo objetivos, metas, cronograma e etapas de execução."
+    },
+
+    {
+      "id": 2,
+      "name": "Gestão Integrada do eSocial, NTEP e FAP",
+      "author": "Rosele Fernandes",
+      "link": "https://drive.google.com/file/d/11blDo79g48KAKwRCdjpZ669lAeSlRGQE/view?usp=drive_link",
+      "resume": "Trabalho de Conclusão de Curso: Um estudo de correspondência entre o eSOCIAL e a gestão de documentos e programas de saúde e segrança do trabalhador."
+    },
+    {
+      "id": 3,
+      "name": "Petição Amicus Curiae",
+      "author": "Rosele Fernandes",
+      "link": "https://drive.google.com/file/d/1TPcfU4pvRH12tSU550UIv66XmPKt3bts/view?usp=drive_link",
+      "resume": "Adicional de Insalubridade. Operadores de Telemarketing. Utilização de Fones de Ouvidos. Anexo 13 da NR 15 da Portaria no 3.214/78 do MTE – Os operadores de telemarketing, que utilizam fones de ouvidos, têm direito ao recebimento de adicional de insalubridade nos termos do Anexo 13 da NR15 da Portaria no 3.214/78 do MTE?"
+    },
+    {
+      "id": 4,
+      "name": "Evasão Escolar",
+      "author": "Rosele Fernandes",
+      "link": "https://drive.google.com/file/d/1xcYQCDnrZpoD9ggF5_9RRg17IasrDGwH/view?usp=drive_link",
+      "resume": "Trabalho de Conclusão de Curso: Um estudo sobre causas e medidas para minimizar o abandono escolar de adultos."
+    },
+    {
+      "id": 5,
+      "name": "Arroio Dilúvio",
+      "author": "Rosele Fernandes",
+      "link": "https://drive.google.com/file/d/1tm5xSigx_rHOqc8HF-UGtSeLySNrG3Eq/view?usp=drive_link",
+      "resume": "Um estudo sobre a Bacia do Arroio Dilúvio e respectivos projetos para sua revitalização."
+    },
+    {
+      "id": 6,
+      "name": "Fontes Energéticas Renováveis: Biocombustíveis",
+      "author": "Rosele Fernandes",
+      "link": "https://drive.google.com/file/d/17PF1tpC36AG3FVwLj0wd_TORyLqlqrrC/view?usp=drive_link",
+      "resume": "Um estudo sobre o uso de biocombustíveis como alternativa a combustíveis de origem fóssil."
+    },
+    {
+      "id": 7,
+      "name": "Coleta Seletiva",
+      "author": "Rosele Fernandes",
+      "link": "https://drive.google.com/file/d/1a2r-UfR9svNEij8P6pwWTPdLK2z7_mpM/view?usp=drive_link",
+      "resume": "Um estudo sobre a gestão da coleta seletiva do Campus do Vale da Universidade Federal do Rio Grande do Sul."
+    },
+    {
+      "id": 8,
+      "name": "Tratamento de Efluentes Líquidos",
+      "author": "Rosele Fernandes",
+      "link": "https://drive.google.com/file/d/1zr6Bx89j8j4gb9PSALqgZUlMqZ5YJGh1/view?usp=drive_link",
+      "resume": "Um estudo sobre o processo de tratamento de efluentes do Departamento Municipal de Água e Esgotos da Cidade de Porto Alegre/RS."
+    },
+
+    {
+      "id": 9,
+      "name": "Cana de açúcar e óleo de palma",
+      "author": "Rosele Fernandes",
+      "link": "https://drive.google.com/file/d/1Xrpt8xvr4J3X_vp6bOwrrK0r4wPZVLgb/view?usp=drive_link",
+      "resume": "Como o Brasil pode se beneficiar de um aproveitamento energético mais intenso."
+    },
+    {
+      "id": 10,
+      "name": "Bônus Demográfico: Ocupação do Espaço Urbano Brasileiro",
+      "author": "Rosele Fernandes",
+      "link": "https://drive.google.com/file/d/1GCGhKjbzSqEEIuON-f70BreEzle3tPYI/view?usp=drive_link",
+      "resume": "O Bônus Demográfico é um fator que pode ser utilizado na melhoria das condições econômicas de um país. Ele ocorre durante um período de transição de uma população predominantemente jovem para uma população de maioria adulta."
+    }
+  ]
+}

@@ -20,7 +20,7 @@ export const GitHubProjectsNumber = styled.div`
 `
 
 export const TitleGitHubProjects = styled.h2`
-  padding-top: 10px;
+  padding-top: 10px;  
 `
 
 export const SearchFormContainer = styled.form`
@@ -51,13 +51,16 @@ export const CardsContainer = styled.ul`
   justify-content: center;
   grid-template-columns: repeat(auto-fill, 416px);
   grid-gap: 2rem;
- margin: 0 20px;
+  margin: 0 20px;
 
  @media (min-width: 576px) {
   margin: 0 40px;
   }
 `
 export const Card = styled.div`
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
   background: ${(props) => props.theme['base-post']};
   list-style: none;
   padding: 20px;
@@ -69,8 +72,6 @@ export const Card = styled.div`
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
     transform: scale(1.025);
     transition: 0.18s;
   }
@@ -78,9 +79,14 @@ export const Card = styled.div`
   @media (min-width: 576px) {
     width: 416px;
   }
-`
+`;
 export const GitHubTitle = styled.h3`
   text-transform: lowercase;
+  padding-bottom: 8px;
+  color: ${(props) => props.theme['base-title']};
+`
+export const PdfTitle = styled.h3`
+  text-transform: none;
   padding-bottom: 8px;
   color: ${(props) => props.theme['base-title']};
 `
@@ -89,4 +95,29 @@ export const GitHubLink = styled.p`
   gap: 0.5rem;
   font-family: 8px;
   padding-bottom: 8px;
+`
+export const BetweenCats = styled.div`
+  display: flex;
+  align-items: center; 
+  gap: 20px; 
+  img {
+    width: 400px; 
+    object-fit: contain; 
+  }
+`
+export const BetweenContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+`
+export const BetweenContentCats = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+  align-items: center;
+`
+export const CardSpan = styled.span`
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 `

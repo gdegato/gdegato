@@ -36,15 +36,6 @@ export const GlobalStyle = createGlobalStyle`
         color:${(props) => props.theme['base-text']};
         -webkit-font-smoothing: antialiased;
          margin: 0 auto;
-  
-     /*    @media (min-width: 900px) {
-            max-width: 900px;           
-        }   
-            
-        @media (max-width: 1380px) {
-            max-width: 1380px;           
-        } */
-        
     }
 
     a {

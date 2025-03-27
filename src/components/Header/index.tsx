@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { HeaderContainer, GdeGatoImage } from './styles';
+import { HeaderContainer, GdeGatoImage, GdeGatoTitle } from './styles';
 
 type Profile = {
     avatar_url: string;
@@ -37,7 +37,7 @@ export function Header() {
             <GdeGatoImage>
                 <img src={profile.avatar_url} />
             </GdeGatoImage>
-            <h2>G de Gato</h2>
+            <GdeGatoTitle>G de Gato</GdeGatoTitle>
         </HeaderContainer>
     )
 }

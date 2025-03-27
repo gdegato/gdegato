@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const GdeGatoProfile = styled.div`
   display: flex;
   padding: 20px;
+  margin-bottom: 20px;
   height: auto;
   width: 100%;
   background: ${(props) => props.theme['base-profile']};
@@ -72,7 +73,6 @@ export const GdeGatoProfile = styled.div`
 
 export const ProfileContent = styled.div`
   padding-left: 20px;
-
   .profile-description {
     margin-bottom: 20px;
   }
@@ -101,4 +101,13 @@ export const ProfileIdentityCompany = styled.div`
     color: ${(props) => props.theme['purple']};
     cursor: pointer;
   }
+
+  .link-container {
+    display: inline-flex;
+    align-items: center;     
+}
+
+  .link-container span {
+    vertical-align: middle; 
+}
 `
