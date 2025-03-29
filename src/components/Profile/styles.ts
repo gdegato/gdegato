@@ -34,11 +34,7 @@ export const GdeGatoProfile = styled.div`
     border: 1px solid white;
   }
 
-  @media (min-width: 576px) {
-    .location-profile {
-      display: unset;
-    }
-  }
+
   
   @media (min-width: 768px) {
     padding: 40px;
@@ -119,8 +115,7 @@ export const ProfileIdentityCompany = styled.div`
   @media (max-width: 768px) {
     .profile-description {
         margin-left: 0;
-        margin-top: 20px;
-        
+        margin-top: 20px;        
     }
 }
 `;

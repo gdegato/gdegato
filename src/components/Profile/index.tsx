@@ -74,26 +74,26 @@ export function Profile() {
                                 </div>
                             </Link>
                         </div>
-                        <div className='location-profile'>
+                        <div className='link-container'>
                             <a className='link-linkedin' href='https://www.credly.com/users/rosele-fernandes' target='_blank'>
                                 <p>
                                     <Student size={20} color="#FA8072" weight="fill" />
                                     Certificados</p>
                             </a>
                         </div>
-                        <div className='location-profile'>
+                        <div className='link-container'>
                             <a className='link-linkedin' href='https://www.linkedin.com/in/roselefernandes/' target='_blank'>
                                 <p>
                                     <LinkedinLogo size={20} color="#3294F8" weight="fill" />
                                     LinkedIn</p></a>
                         </div>
-                        <div className='location-profile'>
+                        <div className='link-container'>
                             <a className='link-linkedin' href='https://open.spotify.com/intl-pt/artist/1Uzxo4SNzx8XPiXH8dy3Nm?si=VJVF4xwtSSGLDzPoWJqSgw' target='_blank'>
                                 <p>
                                     <SpotifyLogo size={20} color="#1db954" weight="fill" />
                                     Spotify</p></a>
                         </div>
-                        <div className='location-profile'>
+                        <div className='link-container'>
                             <a className='link-linkedin' href='https://www.youtube.com/@rosefernandes' target='_blank'>
                                 <p>
                                     <YoutubeLogo size={20} color="#c4302b" weight="fill" />
