@@ -2,7 +2,7 @@ import axios from 'axios';
 import { Link, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { GdeGatoProfile, ProfileContent, ProfileIdentityCompany } from './styles';
-import { GithubLogo, LinkedinLogo, SpotifyLogo, YoutubeLogo, Student, BookOpen, Cat, } from 'phosphor-react';
+import { GithubLogo, LinkedinLogo, SpotifyLogo, Student, BookOpen, Cat, } from 'phosphor-react';
 import rose from '../../assets/rose-3.jpg';
 
 
