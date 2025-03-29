@@ -93,12 +93,7 @@ export function Profile() {
                                     <SpotifyLogo size={20} color="#1db954" weight="fill" />
                                     Spotify</p></a>
                         </div>
-                        <div className='link-container'>
-                            <a className='link-linkedin' href='https://www.youtube.com/@rosefernandes' target='_blank'>
-                                <p>
-                                    <YoutubeLogo size={20} color="#c4302b" weight="fill" />
-                                    YouTube</p></a>
-                        </div>
+                      
 
                     </ProfileIdentityCompany>
                 </div>
