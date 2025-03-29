@@ -30,6 +30,8 @@ export const GdeGatoProfile = styled.div`
 
   .profile-description {
     margin-left: -100px;
+    margin-top: 20px;
+    border: 1px solid white;
   }
 
   @media (min-width: 576px) {
@@ -80,9 +82,12 @@ export const ProfileContent = styled.div`
 
 export const ProfileIdentityCompany = styled.div`
   display: flex;
+  flex-wrap: wrap;   
+  flex-direction: ;
   align-items: center;
   gap: 10px;
-
+  justify-content: center; 
+  border: 1px solid yellow;
   p {
     margin: 0;
     display: flex;
@@ -105,9 +110,17 @@ export const ProfileIdentityCompany = styled.div`
   .link-container {
     display: inline-flex;
     align-items: center;     
-}
+  }
 
   .link-container span {
     vertical-align: middle; 
+  }
+
+  @media (max-width: 768px) {
+    .profile-description {
+        margin-left: 0;
+        margin-top: 20px;
+        
+    }
 }
-`
+`;

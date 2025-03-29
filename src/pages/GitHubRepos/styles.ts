@@ -96,23 +96,30 @@ export const GitHubLink = styled.p`
   font-family: 8px;
   padding-bottom: 8px;
 `
-export const BetweenCats = styled.div`
-  display: flex;
-  align-items: center; 
-  gap: 20px; 
-  img {
-    width: 400px; 
-    object-fit: contain; 
-  }
-`
 export const BetweenContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;  
 `
+export const BetweenCats = styled.div`
+  display: flex;
+  align-items: center; 
+  gap: 20px; 
+
+  img {
+    width: 400px; 
+    object-fit: contain; 
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column; 
+    align-items: center; 
+  }
+`;
 export const BetweenContentCats = styled.div`
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;  
   align-items: center;
 `

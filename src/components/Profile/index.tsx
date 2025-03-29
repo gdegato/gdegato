@@ -107,6 +107,5 @@ export function Profile() {
                 </div>
             </ProfileContent>
         </GdeGatoProfile>
-
     )
 }

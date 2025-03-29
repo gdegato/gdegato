@@ -29,7 +29,7 @@ export const GdeGatoTitle = styled.h1`
 
   font-family: "Barriecito", system-ui;
   font-weight: 400;
-  font-size: 5rem;
+  font-size: 3rem;
   font-style: normal;
   text-align: center;
   margin-top: 10px;
