@@ -5,7 +5,6 @@ import { GdeGatoProfile, ProfileContent, ProfileIdentityCompany } from './styles
 import { GithubLogo, LinkedinLogo, SpotifyLogo, Student, BookOpen, Cat, } from 'phosphor-react';
 import rose from '../../assets/rose-3.jpg';
 
-
 type Profile = {
     avatar_url: string;
     location: string;
@@ -93,8 +92,6 @@ export function Profile() {
                                     <SpotifyLogo size={20} color="#1db954" weight="fill" />
                                     Spotify</p></a>
                         </div>
-                      
-
                     </ProfileIdentityCompany>
                 </div>
                 <div className='profile-description'>

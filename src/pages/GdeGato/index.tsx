@@ -5,7 +5,6 @@ import manos from '../../assets/Manos.png'
 import lando from '../../assets/Orlando.png'
 
 
-
 function GdeGato() {
     return (
         <>
